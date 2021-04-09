@@ -11,11 +11,19 @@
             </v-stepper-step>
 
             <v-stepper-content step="1">
-                <v-form @submit.prevent="goToNextStep">
-                    <v-btn type="submit" color="primary">
-                        Suivant
-                    </v-btn>
-                </v-form>
+                <div class="pa-2">
+                    <v-form @submit.prevent="goToNextStep">
+                        <v-text-field
+                            outlined
+                            label="Superficie"
+                            suffix="m²"
+                        ></v-text-field>
+
+                        <v-btn type="submit" color="primary">
+                            Suivant
+                        </v-btn>
+                    </v-form>
+                </div>
             </v-stepper-content>
 
             <v-stepper-step

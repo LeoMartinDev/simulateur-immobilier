@@ -55,6 +55,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -193,30 +201,42 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _c(
-            "v-stepper-content",
-            { attrs: { step: "1" } },
-            [
-              _c(
-                "v-form",
-                {
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      return _vm.goToNextStep($event)
+          _c("v-stepper-content", { attrs: { step: "1" } }, [
+            _c(
+              "div",
+              { staticClass: "pa-2" },
+              [
+                _c(
+                  "v-form",
+                  {
+                    on: {
+                      submit: function($event) {
+                        $event.preventDefault()
+                        return _vm.goToNextStep($event)
+                      }
                     }
-                  }
-                },
-                [
-                  _c("v-btn", { attrs: { type: "submit", color: "primary" } }, [
-                    _vm._v("\n                    Suivant\n                ")
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          ),
+                  },
+                  [
+                    _c("v-text-field", {
+                      attrs: { outlined: "", label: "Superficie", suffix: "m²" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "v-btn",
+                      { attrs: { type: "submit", color: "primary" } },
+                      [
+                        _vm._v(
+                          "\n                        Suivant\n                    "
+                        )
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ]),
           _vm._v(" "),
           _c(
             "v-stepper-step",
@@ -291,6 +311,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VStepper */ "./node_modules/vuetify/lib/components/VStepper/VStepper.js");
 /* harmony import */ var vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VStepper */ "./node_modules/vuetify/lib/components/VStepper/VStepperContent.js");
 /* harmony import */ var vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VStepper */ "./node_modules/vuetify/lib/components/VStepper/VStepperStep.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/VTextField.js");
 
 
 
@@ -318,7 +339,8 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__.default,VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__.default,VForm: vuetify_lib_components_VForm__WEBPACK_IMPORTED_MODULE_6__.default,VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_7__.default,VStepper: vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_8__.default,VStepperContent: vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_9__.default,VStepperStep: vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_10__.default})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__.default,VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__.default,VForm: vuetify_lib_components_VForm__WEBPACK_IMPORTED_MODULE_6__.default,VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_7__.default,VStepper: vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_8__.default,VStepperContent: vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_9__.default,VStepperStep: vuetify_lib_components_VStepper__WEBPACK_IMPORTED_MODULE_10__.default,VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_11__.default})
 
 
 /* hot reload */
